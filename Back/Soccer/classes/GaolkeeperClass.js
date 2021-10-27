@@ -24,7 +24,4 @@ class Goalkeeper extends Person{
 
 }
 
-const Ziv = new Goalkeeper('Ziv', 'Zerphos', 7500, 22, 0, true);
-// console.log(Ziv.conceededAGoal());
-
 module.exports = Goalkeeper;

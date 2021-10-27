@@ -44,21 +44,4 @@ router.put('/update', (req, res) => {
 })
 
 
-// function convertToPlayer(player) {
-//     const { firstName, surname, salary, age, id, strongLeg, position, celebrationSentence } = player;
-//     const newPlayer = new Player(firstName, surname, salary, age, id, strongLeg, position, celebrationSentence);
-//     return newPlayer;
-// }
-
-// function updatePlayer(oldPlayer, newPlayer) {
-//     console.log(newPlayer);
-//     for(const key in oldPlayer) {
-//         if(!newPlayer.hasOwnProperty(key)){
-//             console.log(oldPlayer[key]);
-//             newPlayer[key] = oldPlayer[key];
-//         }
-//     }
-//     return convertToPlayer(newPlayer);
-// }
-
 module.exports = router;

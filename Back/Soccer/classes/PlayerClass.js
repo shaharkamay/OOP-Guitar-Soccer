@@ -30,7 +30,4 @@ class Player extends Person{
     }
 }
 
-const Nadav = new Player('Nadav', 'Vol', 27000, 23, 2, 'right', 'ST', 'Siiii');
-// console.log(Nadav.getCelebrationSentence);
-
 module.exports = Player;

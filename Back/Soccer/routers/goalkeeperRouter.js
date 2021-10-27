@@ -7,7 +7,6 @@ const router = express.Router();
 
 router.post('/create', (req,res) => {
     try {
-        // console.log()
         const goalkeeperInfo = JSON.parse(req.headers.goalkeeper);
         const newGoalkeeper = convertToGoalkeeper(goalkeeperInfo);
         buildFileForPerson(goalkeeperInfo.id, newGoalkeeper);

@@ -32,7 +32,4 @@ class Person{
     }
 }
 
-// const person = new Person('Shahar', 'Kamay', 12000,22, 1);
-// console.log(person.getFirstName);
-
 module.exports = Person;
