@@ -93,10 +93,10 @@ class BassGuitar extends ClassicGuitar {
         this.used = true;
         return '🔊🔊🔊';
     }
-
+    
     playSolo() {
         let tune = '';
-        const chords = ["💥", "🤘", "🎵", "📢", "💢", "🕺"];
+        const chords = ['💥', '🤘', '🎵', '📢', '💢', '🕺'];
         while(chords.length > 0) {
             const rand = Math.floor(Math.random() * chords.length); // generates a number between 0 to chords.length includes.
             tune += chords.splice(rand, 1)[0];
@@ -104,3 +104,7 @@ class BassGuitar extends ClassicGuitar {
         return tune;
     }
 }
+
+
+
+

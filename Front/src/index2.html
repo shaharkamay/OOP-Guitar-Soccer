@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">Guitar website bootstrap</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#create" class="nav-link">Create your guitar</a>
+            </li>
+            <li class="nav-item">
+              <a href="#play" class="nav-link">Play your guitar</a>
+            </li>
+            <li class="nav-item">
+              <a href="#identify" class="nav-link">Identify your guitar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex justify-content-evenly align-items-center">
+          <div>
+            <h1>
+              Create and <span class="text-warning">Play</span>
+              your guitar
+            </h1>
+            <p class="lead my-5 me-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac
+              vestibulum tellus, sit amet fringilla lorem. Quisque dictum
+              laoreet mi. Integer sagittis hendrerit urna sit amet gravida.
+              Suspendisse potenti. Nullam imperdiet, nibh quis lobortis commodo,
+              lorem nulla lacinia libero, eu vestibulum mi libero quis nisl.
+            </p>
+            <a href="#create" class="btn btn-primary btn-lg"
+              >Create your guitar</a
+            >
+          </div>
+
+          <img
+            class="img-fluid d-none d-md-block"
+            src="https://static.toiimg.com/thumb/msid-80009581,width-1200,height-900,resizemode-4/.jpg"
+            alt="man play guitar"
+            style="max-width: 40%"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary text-light">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="m-3">Identify by sound:</h3>
+
+          <div class="input-group identify-input m-md-4">
+            <select class="form-select" id="identify-input">
+              <option selected>Choose a sound</option>
+              <option value="1">🎶</option>
+              <option value="2">🎸</option>
+              <option value="3">🔊</option>
+            </select>
+            <button
+              id="identify-button"
+              class="btn btn-dark btn-lg"
+              type="button"
+            >
+              Identify
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 text-light" id="create">
+      <div class="container">
+        <div class="row">
+          <div class="col-md d-md-flex justify-content-center">
+            <div class="card bg-dark" style="width: 18rem">
+              <img
+                src="https://images.reverb.com/image/upload/s--P1tK2orG--/t_card-square/v1635278479/ibke8k7jutqpusyvmpo1.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Classic guitar</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+                  obcaecati quod dignissimos consequatur eum distinctio.
+                </p>
+                <button id="create-classic-button" class="btn btn-primary">
+                  Create
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-md-flex justify-content-center">
+            <div class="card bg-dark" style="width: 18rem">
+              <img
+                src="https://d1aeri3ty3izns.cloudfront.net/media/37/379781/1200/preview_2.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Electric guitar</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  maiores eveniet vitae veniam quae?
+                </p>
+                <button id="create-electric-button" class="btn btn-primary">
+                  Create
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-md-flex justify-content-center">
+            <div class="card bg-dark" style="width: 18rem">
+              <img
+                src="https://bothners.co.za/wp-content/uploads/2020/11/CortACTION-BASS-VI-PLUS-TAB6-STRINGBASSGUITAR2-BANDACTIVEEQ4.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bass guitar</h5>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Dolor iure eos reprehenderit sit!
+                </p>
+                <button id="create-bass-button" class="btn btn-primary">
+                  Create
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="play" class="p-5">
+      <div class="container text-center">
+        <h3 class="p-5">My guitar: <span id="guitar-name"></span></h3>
+
+        <div class="row">
+          <div class="col d-md-flex justify-content-center">
+            <button id="play-button" class="btn btn-primary">
+              Play guitar
+            </button>
+          </div>
+          <div class="col d-md-flex justify-content-center">
+            <button id="play-song-button" class="btn btn-primary">
+              Play song
+            </button>
+          </div>
+          <div class="col d-md-flex justify-content-center">
+            <button id="price-button" class="btn btn-primary">
+              Get the guitar price
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index2.js"></script>
+  </body>
+</html>

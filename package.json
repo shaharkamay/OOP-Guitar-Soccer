@@ -1,0 +1,29 @@
+{
+  "name": "OOP-Guitar-Soccer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "GuitarClass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devGuitar": "nodemon ./Back/Guitar/server.js",
+    "devSoccer": "nodemon ./Back/Soccer/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharkamay/OOP-Guitar-Soccer.git"
+  },
+  "keywords": [],
+  "author": "Shahar Kamay <shahar.kamay@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaharkamay/OOP-Guitar-Soccer/issues"
+  },
+  "homepage": "https://github.com/shaharkamay/OOP-Guitar-Soccer#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
